@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Subject</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .subjects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .subject-button {
+            display: block;
+            padding: 15px 30px;
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .subject-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="subjects-container">
+        <a href="maths.html" class="subject-button">Maths</a>
+        <a href="bio.html" class="subject-button">Bio</a>
+        <a href="chemistry.html" class="subject-button">Chemistry</a>
+        <a href="physics.html" class="subject-button">Physics</a>
+    </div>
+</body>
+</html>
