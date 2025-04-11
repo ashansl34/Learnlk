@@ -1,80 +1,105 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Class Link Upload Site</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #007bff;
-      color: white;
-    }.container {
-  padding: 20px;
-  max-width: 800px;
-  margin: auto;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.subject {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-h2 {
-  margin-top: 0;
-}
-
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 5px;
-}
-
-  </style>
+  <title>Virtual Classroom</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Learnlk</h1><div class="subject">
-  <h2>Maths</h2>
-  <ul>
-    <li>Janidu Rashmika</li>
-    <li>Dushyantha Mahabaduge</li>
-    <li>Ruwan Darshana</li>
-  </ul>
-</div>
+  <h1>Virtual Classroom</h1>
 
-<div class="subject">
-  <h2>Physics</h2>
-  <ul>
-    <li>Samitha Rathnayake</li>
-    <li>Anuradha Perera</li>
-  </ul>
-</div>
+  <div class="subject" id="maths">
+    <h2>Maths</h2>
+    <div class="teacher" data-subject="maths">
+      <h3>Janidu Rashmika</h3>
+      <ul class="topics">
+        <li>
+          <span>වර්ගජ සමීකරණ</span>
+          <ul class="days">
+            <li><a href="#">Day 1</a></li>
+            <li><a href="#">Day 2</a></li>
+            <!-- Add more days as needed -->
+          </ul>
+        </li>
+        <li>
+          <span>බහුපද</span>
+          <ul class="days">
+            <li><a href="#">Day 1</a></li>
+            <!-- Add more days as needed -->
+          </ul>
+        </li>
+        <!-- Add more topics as needed -->
+      </ul>
+    </div>
+    <div class="teacher" data-subject="maths">
+      <h3>Dushyantha Mahabaduge</h3>
+      <!-- Repeat topics and days as above -->
+    </div>
+    <div class="teacher" data-subject="maths">
+      <h3>Ruwan Darshana</h3>
+      <!-- Repeat topics and days as above -->
+    </div>
+  </div>
 
-<div class="subject">
-  <h2>Chemistry</h2>
-  <ul>
-    <li>Amila Dasanayake</li>
-    <li>Charitha Dissanayake</li>
-  </ul>
-</div>
+  <div class="subject" id="physics">
+    <h2>Physics</h2>
+    <div class="teacher" data-subject="physics">
+      <h3>Samitha Rathnayake</h3>
+      <ul class="topics">
+        <li>
+          <span>මාන</span>
+          <ul class="days">
+            <li><a href="#">Day 1</a></li>
+            <!-- Add more days as needed -->
+          </ul>
+        </li>
+        <!-- Add more topics as needed -->
+      </ul>
+    </div>
+    <div class="teacher" data-subject="physics">
+      <h3>Anuradha Perera</h3>
+      <!-- Repeat topics and days as above -->
+    </div>
+  </div>
 
-<div class="subject">
-  <h2>Biology</h2>
-  <ul>
-    <li>Dinesh Muthugala</li>
-  </ul>
-</div>
+  <div class="subject" id="chemistry">
+    <h2>Chemistry</h2>
+    <div class="teacher" data-subject="chemistry">
+      <h3>Amila Dasanayake</h3>
+      <ul class="topics">
+        <li>
+          <span>කාබනික රසායනය</span>
+          <ul class="days">
+            <li><a href="#">Day 1</a></li>
+            <!-- Add more days as needed -->
+          </ul>
+        </li>
+        <!-- Add more topics as needed -->
+      </ul>
+    </div>
+    <div class="teacher" data-subject="chemistry">
+      <h3>Charitha Dissanayake</h3>
+      <!-- Repeat topics and days as above -->
+    </div>
+  </div>
 
-  </div>  <script src="script.js"></script></body>
+  <div class="subject" id="biology">
+    <h2>Biology</h2>
+    <div class="teacher" data-subject="biology">
+      <h3>Dinesh Muthugala</h3>
+      <ul class="topics">
+        <li>
+          <span>සත්ත්ව යායා</span>
+          <ul class="days">
+            <li><a href="#">Day 1</a></li>
+            <!-- Add more days as needed -->
+          </ul>
+        </li>
+        <!-- Add more topics as needed -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
