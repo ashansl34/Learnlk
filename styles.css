@@ -1,52 +1,22 @@
-body {
-  background-color: #e0f7fa; /* Light blue background */
-  font-family: Arial, sans-serif;
-  padding: 20px;
-}
+body { background-color: #007BFF; color: white; font-family: Arial, sans-serif; padding: 20px; }
 
-h1 {
-  text-align: center;
-  color: #006064;
-}
+h1 { text-align: center; font-size: 2.5em; margin-bottom: 30px; }
 
-.subject {
-  margin-bottom: 40px;
-}
+.subject { margin-bottom: 40px; }
 
-.subject h2 {
-  color: #004d40;
-  border-bottom: 2px solid #004d40;
-  padding-bottom: 5px;
-}
+.subject h2 { font-size: 2em; margin-bottom: 10px; border-bottom: 2px solid white; padding-bottom: 5px; }
 
-.teacher h3 {
-  cursor: pointer;
-  color: #00796b;
-  margin-top: 10px;
-}
+.teacher-block { background: rgba(255, 255, 255, 0.1); padding: 10px; margin-bottom: 10px; border-radius: 8px; }
 
-.topics {
-  display: none;
-  list-style-type: none;
-  padding-left: 20px;
-}
+.teacher-block h3 { cursor: pointer; margin: 0; font-size: 1.2em; color: #ffe600; }
 
-.topics li span {
-  cursor: pointer;
-  color: #004d40;
-}
+.topics, .days { display: none; list-style: none; padding-left: 15px; }
 
-.days {
-  display: none;
-  list-style-type: none;
-  padding-left: 20px;
-}
+.topics li span { cursor: pointer; display: block; margin: 5px 0; font-weight: bold; }
 
-.days li a {
-  text-decoration: none;
-  color: #00695c;
-}
+.days li { margin: 3px 0; }
 
-.days li a:hover {
-  text-decoration: underline;
-}
+a { color: #ffffff; text-decoration: underline; }
+
+a:hover { color: #ffc107; }
+
