@@ -1,66 +1,52 @@
 body {
+  background-color: #e0f7fa; /* Light blue background */
   font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.container {
-  width: 80%;
-  max-width: 1200px;
-  text-align: center;
+  padding: 20px;
 }
 
 h1 {
-  margin-bottom: 20px;
+  text-align: center;
+  color: #006064;
 }
 
 .subject {
-  display: none;
-  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
-button {
-  padding: 10px;
-  margin: 5px;
-  background-color: #007bff;
-  color: white;
-  border: none;
+.subject h2 {
+  color: #004d40;
+  border-bottom: 2px solid #004d40;
+  padding-bottom: 5px;
+}
+
+.teacher h3 {
   cursor: pointer;
+  color: #00796b;
+  margin-top: 10px;
 }
 
-button:hover {
-  background-color: #0056b3;
-}
-
-.teacher {
-  margin-top: 20px;
-}
-
-.topic {
-  margin-bottom: 10px;
-}
-
-button.watch-btn {
-  margin-top: 5px;
-  padding: 8px 16px;
-  background-color: #28a745;
-  border: none;
-  cursor: pointer;
-}
-
-button.watch-btn:hover {
-  background-color: #218838;
-}
-
-#player {
-  margin-top: 20px;
+.topics {
   display: none;
-  width: 100%;
-  max-width: 800px;
-  height: 450px;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.topics li span {
+  cursor: pointer;
+  color: #004d40;
+}
+
+.days {
+  display: none;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.days li a {
+  text-decoration: none;
+  color: #00695c;
+}
+
+.days li a:hover {
+  text-decoration: underline;
 }
